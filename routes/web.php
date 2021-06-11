@@ -32,5 +32,6 @@ $router->patch('/users/{id}', 'UserController@update'); //update user record
 $router->delete('/users/{id}', 'UserController@delete'); //delete user record
 
 
-
-
+//userjob routes
+$router->get('/usersjob', 'UserJobController@index'); 
+$router->get('/userjob/{id}', 'UserJobController@show'); 
